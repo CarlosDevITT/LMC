@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/ecommerce.css">
+    <title>Ecommerce</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="src/imgS/product1.png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop Now</a>
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="src/imgS/main1.png" onclick="slider('/home/carlos/Gerencia_de_Projeto/src/imgS/product1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="src/imgS/main2.png" onclick="slider('/home/carlos/Gerencia_de_Projeto/src/imgS/product2.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="src/imgS/main3.png" onclick="slider('/home/carlos/Gerencia_de_Projeto/src/imgS/product3.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Logo</h1>
+                <p>It's all about your dreams.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Enter your e-mail to get notified about
+                    our news solutions
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+       </footer>
+
+
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+</body>
+</html>
