@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Verifica as credenciais
       if (usuario === "ADM123" && senha === "123456") {
-         alert(" bem-vindo " + usuario + "!");
-        window.location.href = 'fun.html'; 
-      }  else if(usuario === " LEANDRO123 " && senha === "123456") {
-         alert("bem-vindo" + usuario + "!");
-       window.location.href = 'pages/home/index.html';
+        alert("CADASTRO REALIZADO COM SUCESSO !!" + usuario + "!");
+       
+      }  else if(usuario === "CARLOS123" && senha === "123456") {
+         alert("CADASTRO REALIZADO COM SUCESSO !!" + usuario + "!");
+      
       }   else {
          alert('Credenciais inválidas. Tente novamente.'); 
       }
